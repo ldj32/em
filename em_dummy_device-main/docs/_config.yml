@@ -1,0 +1,63 @@
+# Jekyll configuration for GitHub Pages
+
+# Site settings
+title: EM Dummy Device Arduino Library
+description: Arduino library for EM Dummy Device
+# baseurl: /em  # Uncomment if your repo is not at root
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer
+
+# Plugins
+plugins:
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+  - CNAME
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# Relative links
+relative_links:
+  enabled: true
+  collections: true
+
+# SEO tag
+twitter:
+  username: username
+social:
+  name: Your Name
+  links:
+    - https://github.com/ldj32
+
+# GitHub Metadata (automatically filled by GitHub)
+repository: ldj32/em
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
